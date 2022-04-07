@@ -92,9 +92,6 @@ p {
     }
   }
 }
-section {
-  display: none;
-}
 @include maxw(1023px) {
   .subscribe {
     width: 50%;

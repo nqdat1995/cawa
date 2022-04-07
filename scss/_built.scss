@@ -1,9 +1,10 @@
 .built {
+  display: block;
   margin-top: 130px;
   &-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 60px;
+    grid-gap: 60px;
   }
   &-content {
     display: flex;
@@ -32,5 +33,20 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+  @include maxw(1023px) {
+    &-main {
+      grid-template-columns: 1fr;
+    }
+    &-content {
+      text-align: center;
+      align-items: center;
+    }
+    &-image {
+      order: 0;
+    }
+  }
+  @include maxw(767px) {
+    margin-top: 100px;
   }
 }

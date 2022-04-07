@@ -116,10 +116,6 @@ p {
   outline: none;
 }
 
-section {
-  display: none;
-}
-
 @media screen and (max-width: 1023px) {
   .subscribe {
     width: 50%;
@@ -437,12 +433,13 @@ section {
 }
 
 .built {
+  display: block;
   margin-top: 130px;
 }
 .built-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 60px;
+  grid-gap: 60px;
 }
 .built-content {
   display: flex;
@@ -471,6 +468,78 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 1023px) {
+  .built-main {
+    grid-template-columns: 1fr;
+  }
+  .built-content {
+    text-align: center;
+    align-items: center;
+  }
+  .built-image {
+    order: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .built {
+    margin-top: 100px;
+  }
+}
+
+.audience {
+  margin-top: 120px;
+}
+.audience-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.audience-main h4 {
+  margin-bottom: 16px;
+}
+.audience-main h2 {
+  margin-bottom: 46px;
+}
+.audience-main p {
+  margin-bottom: 50px;
+  width: 80%;
+}
+.audience-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.audience-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+  padding: 56px;
+  border-radius: 20px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2727272727;
+}
+.audience-item:first-of-type {
+  background-color: #ff6d56;
+}
+.audience-item:nth-of-type(2) {
+  background-color: #fcb02c;
+}
+.audience-item:nth-of-type(3) {
+  background-color: #56d9b6;
+}
+.audience-item:last-of-type {
+  background-color: #456efe;
+}
+.audience-item a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=app.css.map */
