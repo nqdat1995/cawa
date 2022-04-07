@@ -1,0 +1,92 @@
+.intro {
+  display: block;
+  margin-bottom: 90px;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 60px;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h3 {
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin-bottom: 40px;
+      width: 407px;
+    }
+    p {
+      max-width: 325px;
+      margin-bottom: 32px;
+      opacity: 0.6;
+    }
+  }
+  &-form {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: 1px solid rgba(18, 38, 103, 0.3);
+    border-radius: 10px;
+    &-icon {
+      margin-right: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 10px 0;
+      flex: 1;
+      border: 0;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    button {
+      padding: 10px 30px;
+      border: 0;
+      background-color: $black;
+      border-radius: 6px;
+      color: white;
+    }
+  }
+  &-image {
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @include maxw(1023px) {
+    &-main {
+      grid-template-columns: 1fr;
+      gap: 60px 0;
+    }
+    &-content {
+      align-items: center;
+      p {
+        max-width: 80%;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+    &-form {
+      width: 50%;
+    }
+  }
+  @include maxw(767px) {
+    &-form {
+      width: 100%;
+    }
+    &-content {
+      h1 {
+        width: 100%;
+      }
+    }
+    &-form {
+      width: 100%;
+    }
+  }
+}

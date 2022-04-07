@@ -1,0 +1,67 @@
+.header {
+  margin: 45px 0;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      font-weight: bold;
+      font-size: 36px;
+      letter-spacing: -0.5px;
+      line-height: lineH(43px, 36px);
+      span {
+        color: $black;
+      }
+      &:visited {
+        color: $blue;
+      }
+    }
+    &-links {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 56px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    &-link {
+      opacity: 0.6;
+      transition: opacity 0.25s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 40px;
+    }
+    &-btn {
+      &-login {
+        color: $black;
+      }
+      &-signup {
+        padding: 20px 44px;
+        border: 0;
+        background-color: $black;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+  @include maxw(1023px) {
+    .nav {
+      &-links {
+        display: none;
+      }
+      &-buttons {
+        display: none;
+      }
+    }
+  }
+  @include maxw(767px) {
+  }
+}

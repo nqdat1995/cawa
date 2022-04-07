@@ -1,0 +1,105 @@
+body {
+  font-family: $primaryFont;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+  line-height: 1;
+  margin: 0 auto;
+  min-width: 1440;
+}
+p {
+  font-family: $secondaryFont;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: lineH(26px, 16px);
+  opacity: 0.6;
+}
+.container {
+  max-width: 1268px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  &-h1 {
+    color: $black;
+    font-size: 46px;
+    line-height: lineH(54px, 46px);
+    font-weight: bold;
+  }
+  &-h2 {
+    color: $black;
+    font-size: 40px;
+    line-height: lineH(47px, 40px);
+  }
+  &-h3 {
+    color: $blue;
+    font-size: 30px;
+    line-height: lineH(35px, 30px);
+  }
+  &-h4 {
+    font-size: 24px;
+    line-height: lineH(28px, 24px);
+  }
+  &-h5 {
+    font-size: 20px;
+    line-height: lineH(24px, 20px);
+  }
+}
+.btn {
+  background-color: $blue;
+  padding: 14px 32px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  white-space: nowrap;
+  &-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: lineH(22px, 18px);
+    letter-spacing: -0.5px;
+  }
+}
+.subscribe {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0 16px;
+  width: 398px;
+  &-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    span {
+      padding: 6px 8px;
+      background-color: $green;
+      box-shadow: 5px 20px 20px rgba(90, 219, 185, 0.15);
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    input {
+      padding: 8px 0;
+      flex: 1;
+      border: 0;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+section {
+  display: none;
+}
+@include maxw(1023px) {
+  .subscribe {
+    width: 50%;
+  }
+}
+@include maxw(767px) {
+  .subscribe {
+    width: 80%;
+  }
+}

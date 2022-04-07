@@ -1,0 +1,36 @@
+.built {
+  margin-top: 130px;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 60px;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      width: 276px;
+      margin-bottom: 40px;
+    }
+    p:first-of-type {
+      margin-bottom: 28px;
+      max-width: 552px;
+    }
+    p:last-of-type {
+      margin-bottom: 32px;
+      max-width: 367px;
+    }
+    h4 {
+      margin-bottom: 8px;
+    }
+  }
+  &-image {
+    order: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
