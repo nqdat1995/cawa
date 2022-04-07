@@ -88,15 +88,16 @@ p {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0 16px;
-  width: 398px;
+  width: 70%;
 }
 .subscribe-input {
   width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 6px 8px;
   border: 1px solid #4670fe;
   border-radius: 10px;
+  margin-right: 16px;
 }
 .subscribe-input span {
   padding: 6px 8px;
@@ -106,6 +107,7 @@ p {
   margin-right: 10px;
 }
 .subscribe-input input {
+  width: 100%;
   padding: 8px 0;
   flex: 1;
   border: 0;
@@ -125,7 +127,7 @@ section {
 }
 @media screen and (max-width: 767px) {
   .subscribe {
-    width: 80%;
+    width: 100%;
   }
 }
 .header {
@@ -242,6 +244,11 @@ section {
   border-radius: 6px;
   color: white;
 }
+.intro-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .intro-image img {
   max-width: 100%;
   height: 100%;
@@ -254,12 +261,6 @@ section {
   }
   .intro-content {
     align-items: center;
-  }
-  .intro-content p {
-    max-width: 80%;
-    text-align: center;
-  }
-  .intro-content h1 {
     text-align: center;
   }
   .intro-form {
@@ -278,6 +279,9 @@ section {
   }
 }
 
+.customer {
+  display: block;
+}
 .customer-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -292,7 +296,7 @@ section {
   margin-bottom: 40px;
   max-width: 320px;
 }
-.customer-content-desc {
+.customer-content p:first-of-type {
   margin-bottom: 32px;
   max-width: 552px;
 }
@@ -304,7 +308,7 @@ section {
 .customer-content-subtitle svg {
   margin-right: 18px;
 }
-.customer-content-short {
+.customer-content p:last-of-type {
   margin-bottom: 18px;
   max-width: 427px;
 }
@@ -333,12 +337,28 @@ section {
     grid-template-columns: 1fr;
     grid-gap: 60px 0;
   }
+  .customer-content {
+    align-items: center;
+    text-align: center;
+  }
+  .customer-link {
+    justify-content: center;
+  }
   .customer-image {
     order: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .customer-content-subtitle h3 {
+    font-size: 26px;
+  }
+  .customer-links {
+    width: 100%;
+  }
+}
 
 .conversation {
+  display: block;
   margin-top: 140px;
 }
 .conversation-main {
@@ -360,7 +380,7 @@ section {
 }
 .conversation-comment {
   padding: 40px;
-  background-color: rgba(70, 112, 254, 0.03);
+  background-color: rgba(70, 112, 254, 0.1);
 }
 .conversation-comment .user {
   display: flex;
@@ -394,6 +414,26 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 1023px) {
+  .conversation-main {
+    grid-template-columns: 1fr;
+  }
+  .conversation-content {
+    align-items: center;
+    text-align: center;
+  }
+  .conversation-comment .user {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .conversation {
+    margin-top: 100px;
+  }
+  .conversation-comment {
+    padding: 10px;
+  }
 }
 
 .built {

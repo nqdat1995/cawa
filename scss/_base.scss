@@ -65,14 +65,15 @@ p {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0 16px;
-  width: 398px;
+  width: 70%;
   &-input {
     width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 6px 8px;
     border: 1px solid $blue;
     border-radius: 10px;
+    margin-right: 16px;
     span {
       padding: 6px 8px;
       background-color: $green;
@@ -81,6 +82,7 @@ p {
       margin-right: 10px;
     }
     input {
+      width: 100%;
       padding: 8px 0;
       flex: 1;
       border: 0;
@@ -100,6 +102,6 @@ section {
 }
 @include maxw(767px) {
   .subscribe {
-    width: 80%;
+    width: 100%;
   }
 }
