@@ -1,230 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cawa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=".\css\app.css" />
+    <script
+      src="https://kit.fontawesome.com/ff02d96f0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cawa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href=".\css\app.css" />
-  <script src="https://kit.fontawesome.com/ff02d96f0a.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a class="nav-logo" href="">ca<span>wa</span></a>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#">Stories</a></li>
-          <li class="nav-link"><a href="#">Library</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
-        </ul>
-        <div class="nav-buttons">
-          <a class="nav-btn nav-btn-login btn-text">Login</a>
-          <a class="nav-btn nav-btn-signup btn-text">Sign up</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="intro">
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="intro-main">
-          <div class="intro-content">
-            <h3 class="title title-h3">7 Day free trial</h3>
-            <h1 class="title title-h1">Create Amazing Web and Apps</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Faucibus vitae amet mattis laoreet in ipsum tempor vel
-            </p>
-            <form action="" class="intro-form">
-              <div class="intro-form-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <g opacity="0.6">
-                    <path
-                      d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                      stroke="#122667" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M20.9999 20.9999L16.6499 16.6499" stroke="#122667" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </g>
-                </svg>
-              </div>
-              <input type="text" name="" id="" placeholder="Create web or app" />
-              <button class="intro-search-button">Search</button>
-            </form>
-            <form action="" class="subscribe">
-              <div class="subscribe-input">
-                <span>@</span>
-                <input type="text" name="" id="" placeholder="Enter your email" />
-              </div>
-              <button class="subscribe-button btn">Get started</button>
-            </form>
+        <nav class="nav">
+          <a class="nav-logo" href="">ca<span>wa</span></a>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">Stories</a></li>
+            <li class="nav-link"><a href="#">Library</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <a class="nav-btn nav-btn-login btn-text">Login</a>
+            <a class="nav-btn nav-btn-signup btn-text">Sign up</a>
           </div>
-          <div class="intro-image">
-            <img src="./images/img1.png" class="intro-image" alt="" />
-          </div>
-        </div>
+        </nav>
       </div>
-    </section>
-    <section class="customer">
-      <div class="container">
-        <div class="customer-main">
-          <div class="customer-content">
-            <h2 class="title title-h2">Find Customers and Referrals</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
-              suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
-              sed lacus sed nibh sed nunc praesent. Nulla fermentum, malesuada
-              enim.
-            </p>
-            <div class="customer-content-subtitle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z"
-                  fill="#456EFE" />
-              </svg>
-              <h3 class="title title-h3">Acquire new customers</h3>
-            </div>
-            <p>
-              Everything you need to start building – including open-source
-              code, documentation.
-            </p>
-            <div class="customer-links">
-              <div class="customer-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474ZM0 21.4286V25H23V21.4286H0ZM9.68421 19.0476V10.7143H13.3158V19.0476H9.68421ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105Z"
-                    fill="#5ADBB9" />
-                </svg>
-                <a href="#">Engage users</a>
-              </div>
-              <div class="customer-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM14.6667 15.8889H22V19.5556C22 20.9 20.9 22 19.5556 22H2.44444C1.1 22 0 20.9 0 19.5556V15.8889H7.33333C7.33333 17.9178 8.97111 19.5556 11 19.5556C13.0289 19.5556 14.6667 17.9178 14.6667 15.8889ZM14.6667 7.33333H19.5556V2.44444H2.44444V7.33333H7.33333C7.33333 9.31333 9.02 11 11 11C12.98 11 14.6667 9.31333 14.6667 7.33333Z"
-                    fill="#5ADBB9" />
-                </svg>
-                <a href="#">Develop across platforms</a>
-              </div>
-            </div>
-          </div>
-          <div class="customer-image">
-            <img src="./images/img2.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="conversation">
-      <div class="container">
-        <div class="conversation-main">
-          <div class="conversation-content">
-            <h2 class="title title-h2">Manage Conversations</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Tristique nibh malesuada viverra faucibus faucibus tellus. Odio
-              egestas feugiat egestasim. Nisl pellentesque elementum
-              scelerisqu.
-            </p>
-            <div class="conversation-comment">
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro-main">
+            <div class="intro-content">
+              <h3 class="title title-h3">7 Day free trial</h3>
+              <h1 class="title title-h1">Create Amazing Web and Apps</h1>
               <p>
-                “Great widgets. Great selection. Great design and easy to
-                implement. Definitely a huge time saver for a web developer!”
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus vitae amet mattis laoreet in ipsum tempor vel
               </p>
-              <div class="user">
-                <div class="user-image">
-                  <img src="./images/user.png" alt="" />
+              <form action="" class="intro-form">
+                <div class="intro-form-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g opacity="0.6">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#122667"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20.9999 20.9999L16.6499 16.6499"
+                        stroke="#122667"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
                 </div>
-                <div class="user-info">
-                  <div class="user-name">Viella Malkovich</div>
-                  <div class="user-title">Creative Director at Johnson</div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Create web or app"
+                />
+                <button class="intro-search-button">Search</button>
+              </form>
+              <form action="" class="subscribe">
+                <div class="subscribe-input">
+                  <span>@</span>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <button class="subscribe-button btn">Get started</button>
+              </form>
+            </div>
+            <div class="intro-image">
+              <img src="./images/img1.png" class="intro-image" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customer">
+        <div class="container">
+          <div class="customer-main">
+            <div class="customer-content">
+              <h2 class="title title-h2">Find Customers and Referrals</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+                suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
+                sed lacus sed nibh sed nunc praesent. Nulla fermentum, malesuada
+                enim.
+              </p>
+              <div class="customer-content-subtitle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z"
+                    fill="#456EFE"
+                  />
+                </svg>
+                <h3 class="title title-h3">Acquire new customers</h3>
+              </div>
+              <p>
+                Everything you need to start building – including open-source
+                code, documentation.
+              </p>
+              <div class="customer-links">
+                <div class="customer-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="25"
+                    viewBox="0 0 23 25"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474ZM0 21.4286V25H23V21.4286H0ZM9.68421 19.0476V10.7143H13.3158V19.0476H9.68421ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105Z"
+                      fill="#5ADBB9"
+                    />
+                  </svg>
+                  <a href="#">Engage users</a>
+                </div>
+                <div class="customer-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM14.6667 15.8889H22V19.5556C22 20.9 20.9 22 19.5556 22H2.44444C1.1 22 0 20.9 0 19.5556V15.8889H7.33333C7.33333 17.9178 8.97111 19.5556 11 19.5556C13.0289 19.5556 14.6667 17.9178 14.6667 15.8889ZM14.6667 7.33333H19.5556V2.44444H2.44444V7.33333H7.33333C7.33333 9.31333 9.02 11 11 11C12.98 11 14.6667 9.31333 14.6667 7.33333Z"
+                      fill="#5ADBB9"
+                    />
+                  </svg>
+                  <a href="#">Develop across platforms</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="conversation-image">
-            <img src="./images/img3.png" alt="" />
+            <div class="customer-image">
+              <img src="./images/img2.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="built">
-      <div class="container">
-        <div class="built-main">
-          <div class="built-content">
-            <h2 class="title title-h2">Built for Busy Small Teams</h2>
+      </section>
+      <section class="conversation">
+        <div class="container">
+          <div class="conversation-main">
+            <div class="conversation-content">
+              <h2 class="title title-h2">Manage Conversations</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tristique nibh malesuada viverra faucibus faucibus tellus. Odio
+                egestas feugiat egestasim. Nisl pellentesque elementum
+                scelerisqu.
+              </p>
+              <div class="conversation-comment">
+                <p>
+                  “Great widgets. Great selection. Great design and easy to
+                  implement. Definitely a huge time saver for a web developer!”
+                </p>
+                <div class="user">
+                  <div class="user-image">
+                    <img src="./images/user.png" alt="" />
+                  </div>
+                  <div class="user-info">
+                    <div class="user-name">Viella Malkovich</div>
+                    <div class="user-title">Creative Director at Johnson</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="conversation-image">
+              <img src="./images/img3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="built">
+        <div class="container">
+          <div class="built-main">
+            <div class="built-content">
+              <h2 class="title title-h2">Built for Busy Small Teams</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+                suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
+                sed lacus sed nibh sed nunc praesent. Nulla fermentum, malesuada
+                enim.
+              </p>
+              <h4 class="title title-h4">Lorem ipsum</h4>
+              <p>
+                Everything you need to start building – including open-source
+                code, documentation.
+              </p>
+              <form action="" class="built-form subscribe">
+                <div class="subscribe-input">
+                  <span>@</span>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="subscribe-button">
+                  <button class="btn">Get started</button>
+                </div>
+              </form>
+            </div>
+            <div class="built-image">
+              <img src="./images/img4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="audience">
+        <div class="container">
+          <div class="audience-main">
+            <h4 class="title title-h4">Engage Visitors</h4>
+            <h2 class="title title-h2">Understand Your Audience</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
               suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
               sed lacus sed nibh sed nunc praesent. Nulla fermentum, malesuada
               enim.
             </p>
-            <h4 class="title title-h4">Lorem ipsum</h4>
+            <div class="audience-items">
+              <a class="audience-item" href="#">
+                <img src="./images/img5.png" alt="" />
+                <h5>Developers</h5>
+              </a>
+              <a class="audience-item" href="#">
+                <img src="./images/img6.png" alt="" />
+                <h5>Entertainment</h5>
+              </a>
+              <a class="audience-item" href="#">
+                <img src="./images/img7.png" alt="" />
+                <h5>Athletes</h5>
+              </a>
+              <a class="audience-item" href="#">
+                <img src="./images/img8.png" alt="" />
+                <h5>Creators</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hire">
+        <div class="container">
+          <div class="hire-main">
+            <h2 class="title title-h2">We’re Hiring</h2>
             <p>
-              Everything you need to start building – including open-source
-              code, documentation.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+              suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
+              sed lacu
             </p>
-            <form action="" class="built-form subscribe">
-              <div class="subscribe-input">
-                <span>@</span>
-                <input type="text" name="" id="" placeholder="Enter your email" />
-              </div>
-              <div class="subscribe-button">
-                <button class="btn">Get started</button>
-              </div>
-            </form>
-          </div>
-          <div class="built-image">
-            <img src="./images/img4.png" alt="" />
+            <div class="hire-items">
+              <a href="" class="hire-item">
+                <div class="hire-item-content">
+                  <p>Front-End Developer</p>
+                  <p>Los Angeles / Remote</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                >
+                  <path
+                    d="M0 14.12L6.10667 8L0 1.88L1.88 0L9.88 8L1.88 16L0 14.12Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="" class="hire-item">
+                <div class="hire-item-content">
+                  <p>Community Manager</p>
+                  <p>New York / Full-Time</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                >
+                  <path
+                    d="M0 14.12L6.10667 8L0 1.88L1.88 0L9.88 8L1.88 16L0 14.12Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="" class="hire-item">
+                <div class="hire-item-content">
+                  <p>UX/UI Designer</p>
+                  <p>New York / Full-Time</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                >
+                  <path
+                    d="M0 14.12L6.10667 8L0 1.88L1.88 0L9.88 8L1.88 16L0 14.12Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <button class="hire-buttom btn btn-text">More About Company</button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="audience">
-      <div class="container">
-        <div class="audience-main">
-          <h4>Engage Visitors</h4>
-          <h2>Understand Your Audience</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum suspendisse sed vel a, egestas ut tellus
-            est, at. Massa pretium sed lacus sed nibh sed nunc praesent. Nulla fermentum, malesuada enim.</p>
-          <div class="audience-items">
-            <div class="audience-item">
-              <img src="./images/img5.png" alt="">
-              <a href="#">Developers</a>
+      </section>
+      <section class="trial">
+        <div class="container">
+          <div class="trial-main">
+            <div class="trial-image">
+              <img src="./images/img9.png" alt="" />
             </div>
-            <div class="audience-item">
-              <img src="./images/img6.png" alt="">
-              <a href="#">Entertainment</a>
-            </div>
-            <div class="audience-item">
-              <img src="./images/img7.png" alt="">
-              <a href="#">Athletes</a>
-            </div>
-            <div class="audience-item">
-              <img src="./images/img8.png" alt="">
-              <a href="#">Creators</a>
+            <div class="trial-content">
+              <h2 class="title title-h2">Star Your Free Trial</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+                suspendisse sed vel a, egestas ut tellus est, at. Massa pretium
+                sed lacu
+              </p>
+              <form action="" class="subscribe">
+                <div class="subscribe-input">
+                  <span>@</span>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <button class="subscribe-button btn">Get started</button>
+              </form>
+              <p>
+                Free 7 - day trial · Easy setup · Cancel any time. Check out
+                <a href="">Terms of Use</a>.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="hire">
-      <div class="container">
-        <div class="hire-main"></div>
-      </div>
-    </section>
-    <section class="trial">
-      <div class="container">
-        <div class="trial-main"></div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"></footer>
-</body>
-
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

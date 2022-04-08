@@ -1,5 +1,6 @@
 .audience {
   margin-top: 120px;
+  margin-bottom: 84px;
   &-main {
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@
     text-align: center;
     h4 {
       margin-bottom: 16px;
+      color: $green;
     }
     h2 {
       margin-bottom: 46px;
@@ -19,36 +21,52 @@
   }
   &-items {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    place-items: center center;
   }
   &-item {
+    width: 100%;
+    max-width: 262px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 36px;
-    padding: 56px;
+    padding: 40px 0;
     border-radius: 20px;
-    color: white;
     font-size: 22px;
     font-weight: bold;
     line-height: lineH(28px, 22px);
+    color: white;
     &:first-of-type {
-      background-color: #ff6d56;
+      background-color: $red;
     }
     &:nth-of-type(2) {
-      background-color: #fcb02c;
+      background-color: $yellow;
     }
     &:nth-of-type(3) {
-      background-color: #56d9b6;
+      background-color: $green;
     }
     &:last-of-type {
-      background-color: #456efe;
+      background-color: $blue;
     }
-    a {
-        color: inherit;
+    h5 {
+      color: inherit;
+    }
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    }
+  }
+  @include maxw(1023px) {
+    &-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @include maxw(767px) {
+    &-items {
+      grid-template-columns: 1fr;
     }
   }
 }
